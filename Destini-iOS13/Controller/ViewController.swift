@@ -31,7 +31,9 @@ class ViewController: UIViewController {
     @objc func updateUI() {
         storyLabel.text = storyBrain.getStoryText()
         choice1Button.setTitle(storyBrain.getChoice1(), for: .normal)
+        choice1Button.titleLabel?.lineBreakMode = NSLineBreakMode.byTruncatingTail
         choice2Button.setTitle(storyBrain.getChoice2(), for: .normal)
+        choice2Button.titleLabel?.lineBreakMode = NSLineBreakMode.byTruncatingTail
     }
     
 }
